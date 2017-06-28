@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EFB605C1F033EBF00FF324F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB605B1F033EBF00FF324F /* main.m */; };
+		1EFB605F1F033EBF00FF324F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB605E1F033EBF00FF324F /* AppDelegate.m */; };
+		1EFB60621F033EBF00FF324F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB60611F033EBF00FF324F /* ViewController.m */; };
+		1EFB60651F033EBF00FF324F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB60631F033EBF00FF324F /* Main.storyboard */; };
+		1EFB60671F033EBF00FF324F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB60661F033EBF00FF324F /* Assets.xcassets */; };
+		1EFB606A1F033EBF00FF324F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB60681F033EBF00FF324F /* LaunchScreen.storyboard */; };
+		1EFB60751F033EBF00FF324F /* ItauTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB60741F033EBF00FF324F /* ItauTests.m */; };
+		1EFB607A1F033EBF00FF324F /* Itau WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1EFB60791F033EBF00FF324F /* Itau WatchKit App.app */; };
+		1EFB60801F033EBF00FF324F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB607E1F033EBF00FF324F /* Interface.storyboard */; };
+		1EFB60821F033EBF00FF324F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB60811F033EBF00FF324F /* Assets.xcassets */; };
+		1EFB60891F033EBF00FF324F /* Itau WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1EFB60881F033EBF00FF324F /* Itau WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1EFB60911F033EBF00FF324F /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB60901F033EBF00FF324F /* InterfaceController.m */; };
+		1EFB60941F033EBF00FF324F /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB60931F033EBF00FF324F /* ExtensionDelegate.m */; };
+		1EFB60971F033EBF00FF324F /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB60961F033EBF00FF324F /* NotificationController.m */; };
+		1EFB609A1F033EBF00FF324F /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB60991F033EBF00FF324F /* ComplicationController.m */; };
+		1EFB609C1F033EBF00FF324F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EFB609B1F033EBF00FF324F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EFB60711F033EBF00FF324F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EFB604F1F033EBF00FF324F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFB60561F033EBF00FF324F;
+			remoteInfo = Itau;
+		};
+		1EFB607B1F033EBF00FF324F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EFB604F1F033EBF00FF324F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFB60781F033EBF00FF324F;
+			remoteInfo = "Itau WatchKit App";
+		};
+		1EFB608A1F033EBF00FF324F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EFB604F1F033EBF00FF324F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFB60871F033EBF00FF324F;
+			remoteInfo = "Itau WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EFB60A31F033EBF00FF324F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1EFB60891F033EBF00FF324F /* Itau WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB60A71F033EBF00FF324F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1EFB607A1F033EBF00FF324F /* Itau WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1EFB60571F033EBF00FF324F /* Itau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itau.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFB605B1F033EBF00FF324F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1EFB605D1F033EBF00FF324F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1EFB605E1F033EBF00FF324F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1EFB60601F033EBF00FF324F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1EFB60611F033EBF00FF324F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1EFB60641F033EBF00FF324F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EFB60661F033EBF00FF324F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EFB60691F033EBF00FF324F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EFB606B1F033EBF00FF324F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFB60701F033EBF00FF324F /* ItauTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItauTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFB60741F033EBF00FF324F /* ItauTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItauTests.m; sourceTree = "<group>"; };
+		1EFB60761F033EBF00FF324F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFB60791F033EBF00FF324F /* Itau WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itau WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFB607F1F033EBF00FF324F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1EFB60811F033EBF00FF324F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EFB60831F033EBF00FF324F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EFB60881F033EBF00FF324F /* Itau WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Itau WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFB608E1F033EBF00FF324F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1EFB608F1F033EBF00FF324F /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		1EFB60901F033EBF00FF324F /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		1EFB60921F033EBF00FF324F /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		1EFB60931F033EBF00FF324F /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		1EFB60951F033EBF00FF324F /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		1EFB60961F033EBF00FF324F /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		1EFB60981F033EBF00FF324F /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		1EFB60991F033EBF00FF324F /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		1EFB609B1F033EBF00FF324F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EFB609D1F033EBF00FF324F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EFB60541F033EBF00FF324F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB606D1F033EBF00FF324F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB60851F033EBF00FF324F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EFB604E1F033EBF00FF324F = {
+			isa = PBXGroup;
+			children = (
+				1EFB60591F033EBF00FF324F /* Itau */,
+				1EFB60731F033EBF00FF324F /* ItauTests */,
+				1EFB607D1F033EBF00FF324F /* Itau WatchKit App */,
+				1EFB608C1F033EBF00FF324F /* Itau WatchKit Extension */,
+				1EFB60581F033EBF00FF324F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EFB60581F033EBF00FF324F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB60571F033EBF00FF324F /* Itau.app */,
+				1EFB60701F033EBF00FF324F /* ItauTests.xctest */,
+				1EFB60791F033EBF00FF324F /* Itau WatchKit App.app */,
+				1EFB60881F033EBF00FF324F /* Itau WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EFB60591F033EBF00FF324F /* Itau */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB605D1F033EBF00FF324F /* AppDelegate.h */,
+				1EFB605E1F033EBF00FF324F /* AppDelegate.m */,
+				1EFB60601F033EBF00FF324F /* ViewController.h */,
+				1EFB60611F033EBF00FF324F /* ViewController.m */,
+				1EFB60631F033EBF00FF324F /* Main.storyboard */,
+				1EFB60661F033EBF00FF324F /* Assets.xcassets */,
+				1EFB60681F033EBF00FF324F /* LaunchScreen.storyboard */,
+				1EFB606B1F033EBF00FF324F /* Info.plist */,
+				1EFB605A1F033EBF00FF324F /* Supporting Files */,
+			);
+			path = Itau;
+			sourceTree = "<group>";
+		};
+		1EFB605A1F033EBF00FF324F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB605B1F033EBF00FF324F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1EFB60731F033EBF00FF324F /* ItauTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB60741F033EBF00FF324F /* ItauTests.m */,
+				1EFB60761F033EBF00FF324F /* Info.plist */,
+			);
+			path = ItauTests;
+			sourceTree = "<group>";
+		};
+		1EFB607D1F033EBF00FF324F /* Itau WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB607E1F033EBF00FF324F /* Interface.storyboard */,
+				1EFB60811F033EBF00FF324F /* Assets.xcassets */,
+				1EFB60831F033EBF00FF324F /* Info.plist */,
+			);
+			path = "Itau WatchKit App";
+			sourceTree = "<group>";
+		};
+		1EFB608C1F033EBF00FF324F /* Itau WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB608F1F033EBF00FF324F /* InterfaceController.h */,
+				1EFB60901F033EBF00FF324F /* InterfaceController.m */,
+				1EFB60921F033EBF00FF324F /* ExtensionDelegate.h */,
+				1EFB60931F033EBF00FF324F /* ExtensionDelegate.m */,
+				1EFB60951F033EBF00FF324F /* NotificationController.h */,
+				1EFB60961F033EBF00FF324F /* NotificationController.m */,
+				1EFB60981F033EBF00FF324F /* ComplicationController.h */,
+				1EFB60991F033EBF00FF324F /* ComplicationController.m */,
+				1EFB609B1F033EBF00FF324F /* Assets.xcassets */,
+				1EFB609D1F033EBF00FF324F /* Info.plist */,
+				1EFB608D1F033EBF00FF324F /* Supporting Files */,
+			);
+			path = "Itau WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1EFB608D1F033EBF00FF324F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB608E1F033EBF00FF324F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EFB60561F033EBF00FF324F /* Itau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFB60A81F033EBF00FF324F /* Build configuration list for PBXNativeTarget "Itau" */;
+			buildPhases = (
+				1EFB60531F033EBF00FF324F /* Sources */,
+				1EFB60541F033EBF00FF324F /* Frameworks */,
+				1EFB60551F033EBF00FF324F /* Resources */,
+				1EFB60A71F033EBF00FF324F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EFB607C1F033EBF00FF324F /* PBXTargetDependency */,
+			);
+			name = Itau;
+			productName = Itau;
+			productReference = 1EFB60571F033EBF00FF324F /* Itau.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EFB606F1F033EBF00FF324F /* ItauTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFB60AB1F033EBF00FF324F /* Build configuration list for PBXNativeTarget "ItauTests" */;
+			buildPhases = (
+				1EFB606C1F033EBF00FF324F /* Sources */,
+				1EFB606D1F033EBF00FF324F /* Frameworks */,
+				1EFB606E1F033EBF00FF324F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EFB60721F033EBF00FF324F /* PBXTargetDependency */,
+			);
+			name = ItauTests;
+			productName = ItauTests;
+			productReference = 1EFB60701F033EBF00FF324F /* ItauTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EFB60781F033EBF00FF324F /* Itau WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFB60A41F033EBF00FF324F /* Build configuration list for PBXNativeTarget "Itau WatchKit App" */;
+			buildPhases = (
+				1EFB60771F033EBF00FF324F /* Resources */,
+				1EFB60A31F033EBF00FF324F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EFB608B1F033EBF00FF324F /* PBXTargetDependency */,
+			);
+			name = "Itau WatchKit App";
+			productName = "Itau WatchKit App";
+			productReference = 1EFB60791F033EBF00FF324F /* Itau WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1EFB60871F033EBF00FF324F /* Itau WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFB60A01F033EBF00FF324F /* Build configuration list for PBXNativeTarget "Itau WatchKit Extension" */;
+			buildPhases = (
+				1EFB60841F033EBF00FF324F /* Sources */,
+				1EFB60851F033EBF00FF324F /* Frameworks */,
+				1EFB60861F033EBF00FF324F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Itau WatchKit Extension";
+			productName = "Itau WatchKit Extension";
+			productReference = 1EFB60881F033EBF00FF324F /* Itau WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EFB604F1F033EBF00FF324F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Apps4s;
+				TargetAttributes = {
+					1EFB60561F033EBF00FF324F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W4G9N7UD83;
+						ProvisioningStyle = Automatic;
+					};
+					1EFB606F1F033EBF00FF324F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W4G9N7UD83;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1EFB60561F033EBF00FF324F;
+					};
+					1EFB60781F033EBF00FF324F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W4G9N7UD83;
+						ProvisioningStyle = Automatic;
+					};
+					1EFB60871F033EBF00FF324F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W4G9N7UD83;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1EFB60521F033EBF00FF324F /* Build configuration list for PBXProject "Itau" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EFB604E1F033EBF00FF324F;
+			productRefGroup = 1EFB60581F033EBF00FF324F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EFB60561F033EBF00FF324F /* Itau */,
+				1EFB606F1F033EBF00FF324F /* ItauTests */,
+				1EFB60781F033EBF00FF324F /* Itau WatchKit App */,
+				1EFB60871F033EBF00FF324F /* Itau WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EFB60551F033EBF00FF324F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB606A1F033EBF00FF324F /* LaunchScreen.storyboard in Resources */,
+				1EFB60671F033EBF00FF324F /* Assets.xcassets in Resources */,
+				1EFB60651F033EBF00FF324F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB606E1F033EBF00FF324F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB60771F033EBF00FF324F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB60821F033EBF00FF324F /* Assets.xcassets in Resources */,
+				1EFB60801F033EBF00FF324F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB60861F033EBF00FF324F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB609C1F033EBF00FF324F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EFB60531F033EBF00FF324F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB60621F033EBF00FF324F /* ViewController.m in Sources */,
+				1EFB605F1F033EBF00FF324F /* AppDelegate.m in Sources */,
+				1EFB605C1F033EBF00FF324F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB606C1F033EBF00FF324F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB60751F033EBF00FF324F /* ItauTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFB60841F033EBF00FF324F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB60941F033EBF00FF324F /* ExtensionDelegate.m in Sources */,
+				1EFB609A1F033EBF00FF324F /* ComplicationController.m in Sources */,
+				1EFB60911F033EBF00FF324F /* InterfaceController.m in Sources */,
+				1EFB60971F033EBF00FF324F /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EFB60721F033EBF00FF324F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFB60561F033EBF00FF324F /* Itau */;
+			targetProxy = 1EFB60711F033EBF00FF324F /* PBXContainerItemProxy */;
+		};
+		1EFB607C1F033EBF00FF324F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFB60781F033EBF00FF324F /* Itau WatchKit App */;
+			targetProxy = 1EFB607B1F033EBF00FF324F /* PBXContainerItemProxy */;
+		};
+		1EFB608B1F033EBF00FF324F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFB60871F033EBF00FF324F /* Itau WatchKit Extension */;
+			targetProxy = 1EFB608A1F033EBF00FF324F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EFB60631F033EBF00FF324F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EFB60641F033EBF00FF324F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1EFB60681F033EBF00FF324F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EFB60691F033EBF00FF324F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1EFB607E1F033EBF00FF324F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EFB607F1F033EBF00FF324F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EFB609E1F033EBF00FF324F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1EFB609F1F033EBF00FF324F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EFB60A11F033EBF00FF324F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				INFOPLIST_FILE = "Itau WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.Itau.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1EFB60A21F033EBF00FF324F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				INFOPLIST_FILE = "Itau WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.Itau.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		1EFB60A51F033EBF00FF324F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				IBSC_MODULE = Itau_WatchKit_Extension;
+				INFOPLIST_FILE = "Itau WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.Itau.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1EFB60A61F033EBF00FF324F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				IBSC_MODULE = Itau_WatchKit_Extension;
+				INFOPLIST_FILE = "Itau WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.Itau.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		1EFB60A91F033EBF00FF324F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				INFOPLIST_FILE = Itau/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.Itau;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EFB60AA1F033EBF00FF324F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				INFOPLIST_FILE = Itau/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.Itau;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1EFB60AC1F033EBF00FF324F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				INFOPLIST_FILE = ItauTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.ItauTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Itau.app/Itau";
+			};
+			name = Debug;
+		};
+		1EFB60AD1F033EBF00FF324F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W4G9N7UD83;
+				INFOPLIST_FILE = ItauTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps4s.ItauTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Itau.app/Itau";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EFB60521F033EBF00FF324F /* Build configuration list for PBXProject "Itau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFB609E1F033EBF00FF324F /* Debug */,
+				1EFB609F1F033EBF00FF324F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFB60A01F033EBF00FF324F /* Build configuration list for PBXNativeTarget "Itau WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFB60A11F033EBF00FF324F /* Debug */,
+				1EFB60A21F033EBF00FF324F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EFB60A41F033EBF00FF324F /* Build configuration list for PBXNativeTarget "Itau WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFB60A51F033EBF00FF324F /* Debug */,
+				1EFB60A61F033EBF00FF324F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EFB60A81F033EBF00FF324F /* Build configuration list for PBXNativeTarget "Itau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFB60A91F033EBF00FF324F /* Debug */,
+				1EFB60AA1F033EBF00FF324F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1EFB60AB1F033EBF00FF324F /* Build configuration list for PBXNativeTarget "ItauTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFB60AC1F033EBF00FF324F /* Debug */,
+				1EFB60AD1F033EBF00FF324F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EFB604F1F033EBF00FF324F /* Project object */;
+}
