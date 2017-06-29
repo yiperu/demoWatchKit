@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16A239m" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,24 +12,32 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller spacing="10" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <imageView alignment="left" image="cabecera" id="5QH-0R-KeL"/>
-                        <button width="1" alignment="left" title="Ver saldo" id="42Z-rd-0c5">
-                            <color key="titleColor" red="1" green="0.99993187189102173" blue="0.0066417069174349308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="backgroundColor" red="0.0" green="0.0066483728587627411" blue="0.96967524290084839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <imageView width="156" alignment="left" image="cabecera" id="5QH-0R-KeL"/>
+                        <button width="1" alignment="left" title="Mostrar Saldo CC" id="42Z-rd-0c5">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="0.60275733470916748" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="verSaldo" destination="AgC-eL-Hgc" id="m0o-Ff-anX"/>
                             </connections>
                         </button>
-                        <label width="136" height="23" alignment="left" textAlignment="center" id="Tzp-ew-q4t"/>
+                        <label width="154" height="23" alignment="left" textAlignment="center" id="Tzp-ew-q4t">
+                            <color key="textColor" red="0.65826430202515662" green="0.39677928289135195" blue="0.0010068321038691689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <label alignment="left" text="Tu saldo al 29/06/2017" minimumScaleFactor="0.59999999999999998" id="6tH-qf-K9Q">
+                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                     </items>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="lblSaldo" destination="Tzp-ew-q4t" id="e7z-ik-m4D"/>
+                        <outlet property="refButton" destination="42Z-rd-0c5" id="wbF-oa-2iF"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="344.79487179487182"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

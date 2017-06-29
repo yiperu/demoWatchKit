@@ -12,6 +12,8 @@
 @interface InterfaceController ()
 
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *lblSaldo;
+@property (nonatomic) Boolean flag;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceButton *refButton;
 
 @end
 
@@ -36,8 +38,28 @@
 -(void)mostrarSaldo {
   [self.lblSaldo setText:@"$ 1.000.000"];
 }
+
+-(void)ocultarSaldo {
+  [self.lblSaldo setText:@""];
+}
+
 - (IBAction)verSaldo {
-  [self mostrarSaldo];
+
+  if (self.flag) {    
+    [self.refButton setTitle:@"Mostrar Saldo CC"];
+    self.flag = 0;
+    [self ocultarSaldo];
+    
+  } else {
+    
+    [self.refButton setTitle:@"Ocultar Saldo CC"];
+    self.flag = 1;
+    
+    [self mostrarSaldo];
+    
+  }
+  
+
   
 }
 
